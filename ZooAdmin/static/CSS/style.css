@@ -1,0 +1,43 @@
+/* .nav-item_active{
+
+   box-sizing: content-box;
+   text-align: center;
+   margin-right: 60px;
+} */
+
+/* .nav-brand{
+   box-sizing: content-box;
+   text-align: center;
+   margin-left: 10px;
+} */
+body{
+    background-image: url("../Images/blurredgiraff.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.HotelCali{
+    width: 250px;
+    height: 200px;
+}
+
+.side .card{
+ display: inline-block;
+}
+
+.side1 .card{
+    display: inline-block;
+   }
+
+.side {
+    width: 600px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.side1 {
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+}
