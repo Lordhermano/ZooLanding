@@ -1,9 +1,9 @@
-from django.contrib.auth.form import UserCreationForm, AuthenticationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from .models import Record
 
-from django import form 
-from django.form.widgets import PasswordInput, TextInput
+from django import forms 
+from django.forms.widgets import PasswordInput, TextInput
 
 class CreateRecord(models.ModelForm):
     class Meta:
