@@ -1,11 +1,17 @@
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
-from .models import Record
 
 from django import forms 
 from django.forms.widgets import PasswordInput, TextInput
 
-class CreateRecord(models.ModelForm):
+class CreationUserForm(UserCreationForm):
+
     class Meta:
-        model = Record
-        fields = ['first_name','last_name','email','password']
+
+        model = User
+        fields = ["Firstname","Lastname","Email","Password1","Password2"]
+
+
+class LoginForm(AuthenticationForm):
+    email = forms.CharField(min_length=3,widget=TextInput())
+    password = forms.CharField(min_length=8,widget=PasswordInput())
