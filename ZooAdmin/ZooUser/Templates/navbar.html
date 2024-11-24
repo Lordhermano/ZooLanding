@@ -1,4 +1,6 @@
-
+       
+    
+    
     {% block content %}
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
@@ -33,17 +35,29 @@
         <div class="nav-corner"> 
           <ul class="navbar-nav mr-auto justify-content-right">
             &nbsp; &nbsp; &nbsp; 
+            {% if user.is_authenticated %}
+              <li class="nav-item">
+                <button class="btn btn-outline-success" href="#">DashBoard</button>
+              </li>  
+            &nbsp;  
+
+            <li class="nav-item">
+                <button class="btn btn-outline-success" href="#">Sign Out</button>
+              </li>
+            
+            {% else %}
             <li class="nav-item">
                 <button class="btn btn-outline-success" href="#">Login</button>
               </li>  
             &nbsp;  
   
             <li class="nav-item">
-                <button class="btn btn-outline-success" href="#">Sign Up</button>
+                <button class="btn btn-outline-success" href="{% urls 'signup' %}">Sign Up</button>
               </li>  
             
             
             &nbsp;    
+            {% endif %}
 
     
           </ul>

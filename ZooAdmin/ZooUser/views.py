@@ -6,3 +6,6 @@ def home(request):
 
 def hotel(request):
     return render(request,'hotel.html')    
+
+def signup(request):
+    return render(request,'register.html')
