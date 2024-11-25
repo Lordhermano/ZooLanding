@@ -131,4 +131,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-AUTH_USER_MODEL = "ZooUser.ZooUser"
+AUTH_USER_MODEL = "ZooUser.ZooUsers"

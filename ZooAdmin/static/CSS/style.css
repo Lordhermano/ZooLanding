@@ -52,3 +52,11 @@ body{
 a{
     text-decoration: none;
 }
+
+/* SignUp */
+
+.container{
+
+    width: 500px;
+    box-sizing: border-box;
+}
