@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import CreateUserForm,LoginForm
 
 # Create your views here.
 def home(request):
@@ -8,4 +9,13 @@ def hotel(request):
     return render(request,'hotel.html')    
 
 def signup(request):
-    return render(request,'signup.html')
+    form = CreateUserForm()
+
+
+    print(form)
+    # if request.method == "POST":
+    #  form = CreateUserForm(request.POST)
+    #  if form.is_valid():
+    #     form.save()
+    context = {"form":form}    
+    return render(request,'signup.html',context)
